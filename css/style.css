@@ -1,0 +1,119 @@
+
+
+:root{
+    --primary: #17364f;
+}
+
+
+
+
+  /* products-gallaery */
+#products-gallary{
+    min-height: 15rem;
+    background-color: black;
+}
+
+#products-gallary .carousel-control-prev-icon{
+    color: white;
+
+}
+#products-gallary  .carousel-control-next-icon{
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+/* firstSection */
+#firstSection{
+    color: 324e65;
+}
+
+
+#firstSection input{
+    background-color:  #324e65;
+    color: #eef3f7 ;
+
+}
+
+#firstSection .btn{
+    background-color: #16354f ;
+
+}
+
+
+/* second  section */
+#secondSection .card-body a{
+    color: rgb(91, 91, 203);
+}
+
+#secondSection .card-body p{
+    color:#17364f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#lastSection{
+    background-image: url("../img/christin-hume-0MoF-Fe0w0A-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;   
+}
+
+
+
+/* fourthSection */
+
+
+#fourthSection .fs-4 {
+    color:#16354f ;
+}
+
+
+
+/* sixthSection */
+#caption-for-sixt-row{
+   min-height: 20rem;
+}
+
+#caption-for-sixt-row p{
+    color: var(--primary);
+
+
+}
+
+
+
+/* last-section */
+
+
+
+
+
+/* footer */
+
+
+
+
+

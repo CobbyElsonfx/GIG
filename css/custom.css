@@ -1,0 +1,324 @@
+
+:root{
+    --primary: #122e45;
+}
+
+body{
+    background-color: rgb(250, 247, 243);
+    color: #1d425f;
+}
+
+.fs-2,.fs-1:hover{
+    color: #06233a;
+
+}
+
+/* *{
+    outline-style: dashed;
+    outline-width: 2px;
+    outline-color:var(--primary);
+} */
+
+
+
+
+
+/* searh bar */
+
+.site-search-opened .site-search {
+	height: 80px;
+}
+
+ .site-search {
+	background-color:#17364f;
+    height: 80px;
+	position: relative;
+}
+
+.site-search .container, .site-search-form {
+	height: 100%;
+	overflow: hidden;
+    border: none;
+}
+
+.site-search input{
+    border: none;
+    outline: none;
+}
+.site-search .container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+    border: none;
+
+}
+
+/* .site-search input[type="text"] {
+	border: none;
+} */
+
+input.site-search-input {
+	color: #fff;
+	font-size: 24px;
+	padding: 20px;
+	text-align: center;
+}
+
+.site-search i:hover {
+    color :#efefef
+  }
+
+.site-search i{
+    color :#ddcaca
+}
+
+
+
+
+/* contact section */
+#contact-section{
+    background-color: rgb(255, 253, 251);
+    min-height: 2rem;
+}
+    
+    /*carousel   start */
+
+
+header  .carousel .carousel-item {
+        height: 500px;
+      }
+header  .carousel-item img {
+          position: absolute;
+          object-fit: cover;
+          top: 0;
+          left: 0;
+          min-height: 500px;
+      }
+
+
+/* header .carousel-caption {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+} */
+
+header .carousel-caption { 
+    width:70%; 
+    z-index:10; 
+    color:#fff;
+     text-align:center; 
+     top:30%; 
+     left:0%; 
+     bottom:auto; 
+     justify-items: start;    
+
+}
+
+    
+   
+/* navbar  */
+
+
+.navbar{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    color: #fff;
+    
+    }
+
+
+.navbar  ul > li{
+    color:  white !important;
+    }
+
+
+.navbar  ul > li > a{
+    color:  white !important;
+    font-weight: normal;
+    }
+
+
+/* hover dropdown */
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+} 
+
+ .dropdown-menu ul a {
+    color: var(--primary);
+
+ }
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #f4f5f7;
+    }
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #edf1f3;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    color: white;
+    }
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    }
+
+
+
+@media only screen and (max-width: 991px) {
+    #toggle-search{
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        top: 18px;
+        color: #f5f4f2;
+        /* float: left; */
+
+    }
+}
+/* product gallary section */
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(75,75,75,0.2);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .hovereffect:hover .overlay {
+    background-color: rgba(48, 152, 157, 0.5);
+    
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-transform: translateY(45px);
+    -ms-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .hovereffect:hover h2 {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+    margin-top: 50px;
+    padding-top: 2px;
+  }
+  
+  .hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-weight: normal;
+    margin: -52px 0 0 0;
+    padding: 100px 100px 100px 100px;
+  }
+  
+  .hovereffect:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 10px #fff;
+  }
+  
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    color: rgb(3, 3, 39);
+}
+
+
+/* button that takes user to top of screen */
+#myBtn {
+    display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; 
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; 
+      border: none; 
+      outline:solid 1px var(--primary); 
+      background-color: white; 
+      color: var(--primary);
+      cursor: pointer; 
+      padding: 15px; 
+      border-top-left-radius: 30px; 
+      border-top-right-radius:30px ;
+      font-size: 18px; 
+    }
+    
+    #myBtn:hover {
+    background-color:var(--primary); /* Add a color background on hover */
+    color: white;
+    }
+
+    
+
+
+
+
+footer{
+    background-color: #16354f;
+}
+
+footer p , a {
+    color:#ebdcdc ;
+}

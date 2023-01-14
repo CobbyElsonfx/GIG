@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>GIG</title>
+    
+    <!-- jquery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1e5c12ce8a.js" crossorigin="anonymous"></script>
+    <script src="http://kit.fontawesome.com/1e5c12ce8a.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />   
+
+     <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css">
+    
+</head>
+<body class="" style="overflow-x: hidden;">
+    <header>
+      <!-- <div class="form-outline">
+        <input type="search"  class="form-control" placeholder="Type query"  />
+      </div> -->
+      <div class="site-search" id="searchBar">
+        <div class="container">
+          <center>
+            <form role="search" method="get" class="site-search-form"   >
+              <input name="" type="text" class="site-search-input w-75 bg-transparent" placeholder="type and press &#8216;enter&#8217;">
+              <span ><i class="fa-solid fa-xmark  "   id="close-buttton"></i></span>
+          </form>
+          </center>
+          
+        </div>
+      </div>
+      <!-- search bar end -->
+      <!-- contact section start -->
+      <div id="contact-section">
+
+      <div class="accordion accordion-borderless" id="accordionFlushExampleX">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOneX">
+            <button class="accordion-button text-dark" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
+            </button>
+          </h2>
+          <div id="flush-collapseOneX" class="accordion-collapse collapse show"
+            aria-labelledby="flush-headingOneX" data-mdb-parent="#accordionFlushExampleX">
+            <div class="accordion-body">
+              <div class="container">
+                <div class=" text-center  text-secondary">
+                  <div class="row">
+                    <div class="col-xm-6 col-sm-6 col-md-4 col-lg-4"><small class="text-muted"><i class="fa-brands fa-time"></i>Mon - Sat: 7:00 - 17:00</small></div>
+                    <div class="col-xm-6 col-sm-6 col-md-4 col-lg-4"><i class="fa-solid fa-phone">&nbsp</i><small class="text-muted">&nbspToll Free: + ************</small></div>
+                    <div class="col-xm-6 col-sm-6 col-md-4 col-lg-4"><i class="fa-solid fa-envelope"&nbsp&nbsp></i><small class="text-muted">&nbspbrightfieldtecacademy.com</small></div>
+                    <hr>
+                  </div>
+                </div>
+              </di>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+      </div>
+      <!-- contact section end -->
+      
+      <!-- nav bar start -->
+      <nav class="navbar navbar-expand-lg  ">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="https://careydevelopment.us/img/branding/careydevelopment-logo-sm.png" class="" style="width: 50%;"/>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <span>
+                  <i onclick="hideFunction(this)" class="fa-solid fa-toggle-on text-light" ></i>
+                  <i onclick="showFunction(this)" style="display: none;" class="fa-solid fa-toggle-off "></i>
+                </span>
+            </button>
+
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link hover-underline-animation" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Dropmedown
+                      </a>
+                      <div class="dropdown-menu m-0 " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-dark" href="#">Action</a>
+                        <a class="dropdown-item text-dark" href="#">Another action</a>
+                        <a class="dropdown-item text-dark" href="#">Another action</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link hover-underline-animation" aria-current="page" href="/">About</a>
+                  </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link hover-underline-animation" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                      <a class="nav-link" href="/contact">Policies</a>
+                  </li>
+
+                </ul>
+            </div> 
+              <i class="fas fa-search px-3"  id="toggle-search"></i>
+        </div>         
+    </nav>
+    
+      <!-- carousel start -->
+        <!-- Carousel wrapper -->
+        <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-ligth" data-mdb-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button  data-mdb-target="#carouselDarkVariant"  data-mdb-slide-to="0"  class="active" aria-current="true"  aria-label="Slide 1"  ></button>
+            <button   data-mdb-target="#carouselDarkVariant"  data-mdb-slide-to="1"  aria-label="Slide 1" ></button>
+            <button  data-mdb-target="#carouselDarkVariant"  data-mdb-slide-to="2"   aria-label="Slide 1" ></button>
+          </div>
+
+          <!-- Inner -->
+          <div class="carousel-inner">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <img src="./img/engin-akyurt-SMwCQZWayj0-unsplash.jpg" class="d-block w-100" alt="Motorbike Smoke"/>
+              <div class="carousel-caption pb-5 px-5 ">
+                <p class="display-2 text-start ">Lorem Ipsum </p>
+                <p class="h1 text-start">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img src="./img/pmv-chamara-ILhf4VsPn_w-unsplash.jpg" class="d-block w-100" alt="Mountaintop"/>
+              <div class="carousel-caption ">
+                <p class="display-2 ">Lorem Ipsum </p>
+                <p class="h1">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <button type="button" class="btn btn-secondary me-1">Secondary</button>
+              </div>
+            </div>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+              <img src="./img/engin-akyurt-7-EiWJ_0pv0-unsplash.jpg" class="d-block w-100" alt="Woman Reading a Book"/>
+              <div class="carousel-caption">
+                <p class="display-2 text-end">Lorem Ipsum </p>
+                <p class="h1 text-end">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                
+              </div>
+            </div>
+          </div>
+          <!-- Inner -->
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Carousel wrapper -->
+    </header>
+    <!--Main Navigation-->
+
+        <!--First Sction: Content-->
+        <section  id="firstSection">
+          <div class="container mt-0 pt-4">
+              <div class="row">
+                <div class="col-md-6 gx-5 mb-4">
+                  <form action="">
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input type="text" id="firstName" class="form-control" />
+                          <label class="form-label" for="firstName">First Name</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input type="text" id="lastName" class="form-control" />
+                          <label class="form-label" for="lastName">Last Name</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline datepicker">
+                          <input type="date"    class="form-control"   id="birthdayDate" />
+                          <label for="birthdayDate" class="form-label">Date</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <h6 class="mb-2 pb-1">Gender: </h6>
+
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input"   type="radio"   name="inlineRadioOptions"   id="femaleGender" value="option1"/>
+                          <label class="form-check-label" for="femaleGender">Female</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input  class="form-check-input"  type="radio" name="inlineRadioOptions" id="maleGender" value="option2" />
+                          <label class="form-check-label" for="maleGender">Male</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                          <input  class="form-check-input"     type="radio"   name="inlineRadioOptions" id="otherGender"  value="option3"/>
+                          <label class="form-check-label" for="otherGender">Other</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input type="email" id="emailAddress" class="form-control" />
+                          <label class="form-label" for="emailAddress">Email</label>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 mb-4">
+
+                        <div class="form-outline">
+                          <input type="tel" id="phoneNumber" class="form-control" />
+                          <label class="form-label" for="phoneNumber">Phone Number</label>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-12">
+
+                        <h6 class="mb-3">Subject</h6>
+
+                        <select class="select" >
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="4">Four</option>
+                          <option value="5">Five</option>
+                          <option value="6">Six</option>
+                          <option value="7">Seven</option>
+                          <option value="8">Eight</option>
+                        </select>
+                        <label class="form-label select-label">Choose option</label>
+
+                        <div class="mt-4">
+                          <input class="btn btn-warning btn-lg" type="submit" value="Submit" />
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+
+                <div class="col-md-6 gx-5 mb-4">
+                  
+                  <h4><strong>Facilis consequatur eligendi</strong></h4>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+                    eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+                    sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+                  </p>
+                  <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+                  <p class="text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
+                    nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam illum
+                    alias, unde optio accusantium soluta, iusto molestiae adipisci et?
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--End of first section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Second Section: Content-->
+        <section class=""  id="secondSection">
+           <div class="container">
+            <h4 class="mb-5 . text-center"><strong>Facilis consequatur eligendi</strong></h4>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img
+                    src="https://mdbootstrap.com/img/new/standard/nature/184.jpg"  class="img-fluid" />
+                  <a href="#">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body bg-transparent pt-2">
+                  <h5 class="">Card title <hr class="p-3 w-75">
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <a href="#" class="link-primary" >Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" class="img-fluid"/>
+                  <a href="#">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body bg-transparent pt-2">
+                  <h5 class="">Card title <hr class="p-3 w-75">
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <a href="#" class="link-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <img src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"   class="img-fluid"   />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body bg-transparent pt-2">
+                  <h5 class="">Card title <hr class="p-3 w-75">
+                  </h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's content.
+                  </p>
+                  <a href="#!" class="link-primary" >Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           </div>
+        </section>
+        <!--End of Second Section: Content-->
+        <hr class="my-5" />
+        <!--Section: Content-->
+       
+    
+
+    <!--Third  section content -->
+    <section class="mb-5">
+      <div class="py-5"  id="products-gallary">
+              <div>
+                <p class="fs-4 text-light text-center">PRODUCT GALLERY</p>
+              </div>
+                  <!-- Carousel wrapper -->
+              <div id="carouselMultiItemExample" class="carousel slide carousel-light text-center" data-mdb-ride="carousel">
+              <!-- Controls -->
+              <div class="d-flex justify-content-center mb-4">
+                <button   class="carousel-control-prev position-relative"    type="button"   data-mdb-target="#carouselMultiItemExample"  data-mdb-slide="prev"  >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button  class="carousel-control-next position-relative"  type="button"    data-mdb-target="#carouselMultiItemExample"        data-mdb-slide="next"  >
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- Inner -->
+              <div class="carousel-inner py-4">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-4">
+                       
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/the-nix-company-tR-fqLlBg5c-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/johanne-pold-jacobsen-XYkc3MfT7b4-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                        
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/kinn-living-XCoZgF_wT7A-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12">
+                        
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/reuben-mansell-ZiiMjTnwohE-unsplash (1).jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                        
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                        
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/the-nix-company-3_KYuMVl1Q8-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 d-none d-lg-block">
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/the-nix-company-tR-fqLlBg5c-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                          
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/the-nix-company-tR-fqLlBg5c-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+  
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/adio-winoto-2vizGxszEG4-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+                       
+                        <div class="bg-image ripple hovereffect" data-mdb-ripple-color="light">
+                          <img src="./img/projectsGallary/johanne-pold-jacobsen-XYkc3MfT7b4-unsplash.jpg" class="w-100" />
+                          <a href="#!">
+                            <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.4)">
+                              <div class="overlay">
+                                <h2>LOREM EPSUM </h2>
+                                <a class="info" href="#">BTN</a>
+                             </div>
+                            </div>
+                            <div class="hover-overlay">
+                              <div class="mask" style="background-color: hsla(0, 0%,98%, 0.2)"></div>
+                            </div>
+                          </a>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Inner -->
+              </div>
+          <!-- Carousel wrapper --> 
+      </div>
+    </section>
+    <!--En of third Section Section: Content-->
+    
+
+    <!-- fifth-section -->
+    <section id="fourthSection" class="mY-5" >
+      <div class="container ">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <p class="fs-4"><i class="fa-brands fa-dashcube"></i>&nbspTravel World Wide</p>
+              
+              <p class="fs-6">Maecenas vulputate dui eu tellus accumsan ultricies. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <p class="fs-4"><i class="fa-brands fa-product-hunt"></i>&nbsp Join Us Now</p>
+              <p class="fs-6">Vestibulum mauris lacus, vulputate at euismod vel, aliquam eget sem. Cras eu dapibus sem. Mauris lobortis pulvinar ante, non malesuada urna pharetra a. Donec ac libero libero</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <p class="fs-4"><i class="fa-brands fa-readme"></i>&nbspVestibulum mauris lacus</p>
+              <p class="fs-6">nteger in pretium risus. Sed at congue nulla, a ultricies ligula. Cras nec mauris sed urna lobortis varius. Cras sollicitudin malesuada ex ac commodo.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <p class="fs-4"><i class="fa-brands fa-google-play"></i>&nbsp&nbspSed at congue nulla</p>
+              <p class="fs-6">Aliquam pulvinar porttitor libero eu venenatis. Fusce lobortis nulla ac odio venenatis malesuada. Integer rutrum id massa ut malesuada. Ut fermentum est mi, a dictum augue bibendum </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <p class="fs-4"><i class="fa-brands fa-vk"></i>&nbsp&nbspWonderful Holidays</p>
+              <p class="fs-6">nteger in pretium risus. Sed at congue nulla, a ultricies ligula. Cras nec mauris sed urna lobortis varius. Cras sollicitudin malesuada ex ac commodo.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <i class="fa-brands fa-atlassian text-center"></i>
+              <p class="fs-6">Aliquam pulvinar porttitor libero eu venenatis. Fusce lobortis nulla ac odio venenatis malesuada. Integer rutrum id massa ut malesuada. Ut fermentum est mi, a dictum augue bibendum </p>
+            </div>
+            
+          </div>
+        </div>
+    </section>
+   <!-- fifth-section -->
+    <section id="lastSection">
+      <div class="container"  style="padding-top:5rem; line-height: 25px;">
+        <div class="fw-75">
+          <p class="fs-1 text-light fw-bold text-uppercase">Aliquam pulvinar porttitor libero eusce lobortis nulla ac </p>
+          <p class="fs-4 text-light " al>We will take care of your cargo or your passenger and deliver them safe and on time</p>
+          <button type="button" class="btn btn-secondary btn-rounded">Secondary</button>
+        </div>
+             
+      </div>
+    </section>
+    <!-- last section end  -->
+
+
+    <section id="sixthSection ">
+      <div class="container">
+        <div class="text-center "  style="padding-top: 6rem;  padding-bottom: 4rem;">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
+              <i class="fas fa-cubes fa-3x text-primary mb-4"></i>
+              <h5 class="text-primary fw-bold mb-3">5000+</h5>
+              <h6 class="fw-normal mb-0">Lorem Ipsum</h6>
+              <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
+              <i class="fas fa-layer-group fa-3x text-primary mb-4"></i>
+              <h5 class="text-primary fw-bold mb-3">490+</h5>
+              <h6 class="fw-normal mb-0">Lorem Ipsum</h6>
+              <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0 position-relative">
+              <i class="fas fa-image fa-3x text-primary mb-4"></i>
+              <h5 class="text-primary fw-bold mb-3">100+</h5>
+              <h6 class="fw-normal mb-0">Lorem Ipsum</h6>
+              <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+            </div>
+        
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0 position-relative">
+              <i class="fas fa-plug fa-3x text-primary mb-4"></i>
+              <h5 class="text-primary fw-bold mb-3">28</h5>
+              <h6 class="fw-normal mb-0">Lorem Ipsum</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- sixth  section start -->
+    <section class="last-section">
+      <div class="container mx-auto">
+        <p class="fs-1 text-center" style="list-style: disc ;"> LOREM IPSUM TRELLA
+        </p>
+        <hr class="w-25   mx-auto" style="border-width:.2rem ; border-color:#061929;">
+
+      </div>
+     
+    
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner container">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-6">
+                <div class=" mb-3 py-4" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="./img/projectsGallary/adio-winoto-2vizGxszEG4-unsplash.jpg" alt="Trendy Pants and Shoes"  class="img-fluid rounded-start p-2 mx-4 " />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="p-4">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class=" mb-3 py-4" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img  src="./img/projectsGallary/johanne-pold-jacobsen-XYkc3MfT7b4-unsplash.jpg"  alt="Trendy Pants and Shoes"  class="img-fluid rounded-start p-2 mx-4"  />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="p-4">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+              <div class="row">
+              <div class="col-6">
+                <div class=" mb-3 py-4" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img  src="./img/projectsGallary/kinn-living-XCoZgF_wT7A-unsplash.jpg"
+                        alt="Trendy Pants and Shoes"
+                        class="img-fluid rounded-start p-2 mx-4"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="p-4">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class=" mb-3 py-4" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./img/projectsGallary/reuben-mansell-nwOip8AOZz0-unsplash.jpg"
+                        alt="Trendy Pants and Shoes"
+                        class="img-fluid rounded-start p-2 mx-4"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="p-4">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+              <div class="row">
+              <div class="col-6">
+                <div class=" mb-3 py-4" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./img/projectsGallary/reuben-mansell-ZiiMjTnwohE-unsplash.jpg"
+                        alt="Trendy Pants and Shoes"
+                        class="img-fluid rounded-start p-2 mx-4"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="p-4">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class=" mb-3 py-4" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="./img/projectsGallary/the-nix-company-3_KYuMVl1Q8-unsplash.jpg"
+                        alt="Trendy Pants and Shoes"
+                        class="img-fluid rounded-start p-2 mx-4"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="p-4">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural lead-in to
+                          additional content. This content is a little bit longer.
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+
+    <!-- button that takes user to the top of the screen -->
+    <button onclick="topFunction()" id="myBtn"  title="Go to top">Top</button>
+    
+
+    <!-- sixt section end -->
+    <!--Footer-->
+    <!-- Footer -->
+<footer class="text-center text-lg-start text-light">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>BRIGHTFIELD TECH
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> Sefwi Bekwai - Adjacent to the Palace</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com 
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="#">btn@gmail.com --CobbyElsonfx @ BRIGHTFIELD TECH ACADEMY</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+   <!-- Bootsratp -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js" ></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
