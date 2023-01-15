@@ -296,17 +296,17 @@ header .carousel-caption {
       z-index: 99; 
       border: none; 
       outline:solid 1px var(--primary); 
-      background-color: white; 
+      background-color:transparent ; 
       color: var(--primary);
       cursor: pointer; 
       padding: 15px; 
-      border-top-left-radius: 30px; 
-      border-top-right-radius:30px ;
+      border-top-left-radius: 20px; 
+      border-top-right-radius:20px ;
       font-size: 18px; 
     }
     
     #myBtn:hover {
-    background-color:var(--primary); /* Add a color background on hover */
+    background-color:transparent; /* Add a color background on hover */
     color: white;
     }
 
