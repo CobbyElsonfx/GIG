@@ -146,7 +146,7 @@ header .carousel-caption {
 }
 
 /* rotate caret on hover */
-.dropdown-menu > li > a:hover:after {
+.dropdown > li > a:hover:after {
     text-decoration: underline;
     transform: rotate(-90deg);
 } 

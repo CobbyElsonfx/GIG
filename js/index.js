@@ -32,19 +32,6 @@ function hideFunction(x) {
 
 
 
-//   captionshow in multi carousel section
-
-// $(".bg-image").(()=> {
-//     $(".captionShow").show()
-// })
-
-// $('.bg-image').hover(mouseEnter, mouseLeave);
-// function mouseEnter() {
-//    $(".captionShow").show()
-// };
-// function mouseLeave() {
-//      $(".captionShow").hide("slow")
-// };
 
 
 
