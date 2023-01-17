@@ -6,6 +6,9 @@
 body{
     background-color: rgb(250, 247, 243);
     color: #1d425f;
+    font-family: 'Mukta', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+
 }
 
 .fs-2,.fs-1:hover{
