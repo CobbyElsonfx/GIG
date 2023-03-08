@@ -1,12 +1,12 @@
-
+<ins># Special thanks to Mr. Oliver, Manager at Brightfield Tech Academy, and all friends and team members who in various ways contributed to this projects. This landing page was made with all the love at Brightfield Tech Academy.</ins>
 
 Integrated Content and Resources:
-i) Bootstrap Material Design 
-ii) Jquery 
-iii) Bootstrap 
-iv) Javascript 
-v) HTML AND CSS
+* Bootstrap Material Design 
+* Jquery 
+* Bootstrap 
+* Javascript 
+* HTML AND CSS
 
 
-This landing page was created with all the love at brightfield tech academy, special thanks to Mr. Oliver - Manager at Brightfield tech Academy, and all friends and team mates who in diverse ways contributed to this projects. 
+ 
 
